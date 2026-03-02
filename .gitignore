@@ -1,16 +1,26 @@
 # Python
 __pycache__/
-*.pyc
+*.py[cod]
 *.pyo
 *.pyd
+*.egg
 *.egg-info/
+dist/
+build/
 .env
 venv/
-.venv/
+*.venv/
+.Python
 
-# Local test/tmp files
-tests/
+# Node
+node_modules/
+
+# Temp files
 tmp/
+tests/
+
+# VS Code
+.vscode/
 
 # OS
 .DS_Store
