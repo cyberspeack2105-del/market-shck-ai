@@ -100,9 +100,7 @@ async def chat(request: ChatRequest):
     """
     Proxy endpoint for OpenRouter AI Assistant.
     """
-    # OpenRouter API integration
     API_KEY = "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"
-    # Using the user-specified model slug
     MODEL = "openai/gpt-oss-120b"
     
     try:
@@ -111,7 +109,7 @@ async def chat(request: ChatRequest):
                 "https://openrouter.ai/api/v1/chat/completions",
                 headers={
                     "Authorization": f"Bearer {API_KEY}",
-                    "HTTP-Referer": "http://localhost:8091", # Optional, but good for OpenRouter
+                    "HTTP-Referer": "https://market-shck-ai.vercel.app",
                     "X-Title": "MarketShock AI",
                     "Content-Type": "application/json"
                 },
@@ -122,23 +120,29 @@ async def chat(request: ChatRequest):
                         {"role": "user", "content": request.message}
                     ]
                 },
-                timeout=45.0 # High timeout for large MoE models
+                timeout=60.0
             )
             
+            print(f"OpenRouter Status: {response.status_code}")
+            print(f"OpenRouter Response: {response.text[:500]}")
+            
             if response.status_code != 200:
-                error_detail = f"OpenRouter API Error ({response.status_code}): {response.text}"
-                print(error_detail)
-                raise HTTPException(status_code=response.status_code, detail=error_detail)
+                raise HTTPException(status_code=response.status_code, detail=f"OpenRouter Error: {response.text}")
             
             data = response.json()
             if "choices" in data and len(data["choices"]) > 0:
                 return {"reply": data['choices'][0]['message']['content']}
             else:
-                raise HTTPException(status_code=502, detail="Invalid response from OpenRouter")
+                raise HTTPException(status_code=502, detail=f"Unexpected response: {data}")
                 
+    except httpx.TimeoutException:
+        raise HTTPException(status_code=504, detail="AI service timed out. Please try again.")
     except httpx.RequestError as e:
         raise HTTPException(status_code=503, detail=f"Failed to connect to AI Service: {str(e)}")
+    except HTTPException:
+        raise
     except Exception as e:
+        print(f"Chat endpoint error: {str(e)}")
         raise HTTPException(status_code=500, detail=str(e))
 
 if __name__ == "__main__":
