@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     let trendsChart, volumeChart, riskRadarChart;
 
-    const API_BASE_URL = 'http://localhost:8095/api';
+    const API_BASE_URL = 'https://market-shck-ai.onrender.com/api';
 
     async function loadIndustries() {
         try {

@@ -6,8 +6,11 @@ class DataProcessor:
         self.backend_path = backend_path
         self.root_path = os.path.dirname(backend_path)
         self.job_data_path = os.path.join(backend_path, 'job.csv')
-        self.layoffs_path = os.path.join(self.root_path, 'layoffs.csv')
-        self.ai_impact_path = os.path.join(self.root_path, 'AI_Impact_on_Jobs_2030.csv')
+        # Support CSVs in both backend/ (Render) and parent dir (local)
+        layoffs_local = os.path.join(backend_path, 'layoffs.csv')
+        ai_local = os.path.join(backend_path, 'AI_Impact_on_Jobs_2030.csv')
+        self.layoffs_path = layoffs_local if os.path.exists(layoffs_local) else os.path.join(self.root_path, 'layoffs.csv')
+        self.ai_impact_path = ai_local if os.path.exists(ai_local) else os.path.join(self.root_path, 'AI_Impact_on_Jobs_2030.csv')
 
     def load_job_data(self):
         """Loads the static job dataset."""
