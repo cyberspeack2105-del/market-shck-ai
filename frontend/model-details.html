@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Model Methodology | MarketShock AI</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            min-height: 100vh;
+            font-family: 'Inter', sans-serif;
+            overflow-x: hidden;
+            background-color: #0f172a;
+        }
+
+        .glass-card {
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 1.5rem;
+        }
+
+        .metric-badge {
+            background: rgba(19, 236, 146, 0.1);
+            color: #13ec92;
+            padding: 2px 8px;
+            border-radius: 9999px;
+            font-size: 0.75rem;
+            font-weight: 600;
+        }
+    </style>
+    <script>
+        mermaid.initialize({ startOnLoad: true, theme: 'dark' });
+    </script>
+</head>
+
+<body class="text-slate-200">
+    <nav class="flex items-center justify-between px-6 py-6 lg:px-12 relative z-10">
+        <div class="flex items-center gap-3">
+            <div class="p-2 bg-[#13ec92] rounded-lg">
+                <svg class="w-6 h-6 text-slate-900" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
+                </svg>
+            </div>
+            <span class="text-xl font-bold tracking-tight">MarketShock AI</span>
+        </div>
+        <div class="flex items-center gap-8">
+            <a href="home.html" class="text-sm font-medium hover:text-[#13ec92] transition-colors">Home</a>
+            <a href="about.html" class="text-sm font-medium hover:text-[#13ec92] transition-colors">About</a>
+            <a href="model-details.html" class="text-sm font-medium text-[#13ec92]">Model</a>
+            <a href="index.html"
+                class="px-5 py-2.5 bg-[#13ec92] text-slate-900 rounded-full text-sm font-semibold hover:bg-[#10d483] transition-all shadow-lg shadow-emerald-500/20">Dashboard</a>
+        </div>
+    </nav>
+
+    <main class="relative z-10 px-6 lg:px-12 py-12 max-w-5xl mx-auto">
+        <header class="mb-16">
+            <h1 class="text-4xl lg:text-5xl font-extrabold mb-6 tracking-tight">
+                How our <span class="text-[#13ec92]">AI Engine</span> Works
+            </h1>
+            <p class="text-lg text-slate-400 leading-relaxed max-w-3xl">
+                The core of MarketShock AI is a proprietary ensemble model that fuses historical job market data
+                with forward-looking technological projections. Transparency is our priority.
+            </p>
+        </header>
+
+        <section class="grid gap-12">
+            <div class="glass-card p-8">
+                <h2 class="text-2xl font-bold mb-8">Prediction Architecture</h2>
+                <div class="mermaid flex justify-center py-4 bg-slate-900/50 rounded-xl">
+                    graph TD
+                    A[Job Listing Data] --> D[Forecaster Engine]
+                    B[Layoff Trends] --> D
+                    C[AI 2030 Projections] --> D
+                    D --> E{Analysis Layer}
+                    E --> F[Shock Risk Score]
+                    E --> G[Growth Velocity]
+                    E --> H[Market Absorption]
+                    F & G & H --> I[Consolidated Insight]
+                </div>
+            </div>
+
+            <div class="grid lg:grid-cols-2 gap-8">
+                <div class="glass-card p-6">
+                    <div class="flex items-center justify-between mb-4">
+                        <h3 class="text-xl font-bold">Shock Risk Score</h3>
+                        <span class="metric-badge">0-100</span>
+                    </div>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-4">
+                        A composite metric measuring the likelihood of structural disruption within an industry.
+                        It takes into account:
+                    </p>
+                    <ul class="space-y-2 text-sm text-slate-300">
+                        <li class="flex items-center gap-2">
+                            <span class="w-1.5 h-1.5 bg-[#13ec92] rounded-full"></span>
+                            Volume of historical layoffs vs industry size
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <span class="w-1.5 h-1.5 bg-[#13ec92] rounded-full"></span>
+                            Current hiring momentum (ARIMA trends)
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <span class="w-1.5 h-1.5 bg-[#13ec92] rounded-full"></span>
+                            AI automation probability by 2030
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="glass-card p-6">
+                    <div class="flex items-center justify-between mb-4">
+                        <h3 class="text-xl font-bold">Market Absorption</h3>
+                        <span class="metric-badge">Percentage</span>
+                    </div>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-4">
+                        Measures how "integrated" an industry is with technological shifts.
+                        High absorption suggests the industry is effectively adopting AI to improve productivity.
+                    </p>
+                    <ul class="space-y-2 text-sm text-slate-300">
+                        <li class="flex items-center gap-2">
+                            <span class="w-1.5 h-1.5 bg-[#13ec92] rounded-full"></span>
+                            Skill density in job listings
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <span class="w-1.5 h-1.5 bg-[#13ec92] rounded-full"></span>
+                            Historical resilience during data shocks
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <section class="glass-card p-8 lg:p-12">
+                <h2 class="text-2xl font-bold mb-6">Ethical Artificial Intelligence</h2>
+                <p class="text-slate-400 leading-relaxed mb-6">
+                    We believe in "Augmented Intelligence" rather than pure replacement. Our models are trained to
+                    identify where human skills can be complimented by technology, providing a roadmap for
+                    career transition and industry evolution rather than just forecasting negative outcomes.
+                </p>
+                <a href="index.html"
+                    class="inline-flex items-center gap-2 text-[#13ec92] font-semibold hover:underline">
+                    Back to Forecast Dashboard
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                    </svg>
+                </a>
+            </section>
+        </section>
+
+        <footer class="mt-24 pt-12 border-t border-slate-800 text-center text-slate-500 text-sm">
+            <p>&copy; 2026 MarketShock AI. Technical Framework V2.0 (FastAPI Engine).</p>
+        </footer>
+    </main>
+
+    <!-- Background Animation Canvas -->
+    <canvas id="bg-canvas" class="fixed inset-0 -z-10 opacity-50"></canvas>
+    <script src="background-animation.js"></script>
+</body>
+
+</html>

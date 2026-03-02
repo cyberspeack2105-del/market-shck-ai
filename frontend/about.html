@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About | MarketShock AI</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            min-height: 100vh;
+            font-family: 'Inter', sans-serif;
+            overflow-x: hidden;
+            background-color: #0f172a;
+        }
+
+        .glass-card {
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 1.5rem;
+        }
+
+        .text-gradient {
+            background: linear-gradient(135deg, #13ec92, #0ea5e9);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    </style>
+</head>
+
+<body class="text-slate-200">
+    <nav class="flex items-center justify-between px-6 py-6 lg:px-12 relative z-10">
+        <div class="flex items-center gap-3">
+            <div class="p-2 bg-[#13ec92] rounded-lg">
+                <svg class="w-6 h-6 text-slate-900" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
+                </svg>
+            </div>
+            <span class="text-xl font-bold tracking-tight">MarketShock AI</span>
+        </div>
+        <div class="flex items-center gap-8">
+            <a href="home.html" class="text-sm font-medium hover:text-[#13ec92] transition-colors">Home</a>
+            <a href="about.html" class="text-sm font-medium text-[#13ec92]">About</a>
+            <a href="model-details.html" class="text-sm font-medium hover:text-[#13ec92] transition-colors">Model</a>
+            <a href="index.html"
+                class="px-5 py-2.5 bg-[#13ec92] text-slate-900 rounded-full text-sm font-semibold hover:bg-[#10d483] transition-all shadow-lg shadow-emerald-500/20">Dashboard</a>
+        </div>
+    </nav>
+
+    <main class="relative z-10 px-6 lg:px-12 py-12 max-w-5xl mx-auto">
+        <header class="text-center mb-16">
+            <h1 class="text-4xl lg:text-6xl font-extrabold mb-6 tracking-tight">
+                Our Mission: <span class="text-gradient">Predicting the Future</span>
+            </h1>
+            <p class="text-lg text-slate-400 max-w-2xl mx-auto leading-relaxed">
+                MarketShock AI was founded with a single goal: to empower decision-makers with advanced intelligence
+                that identifies structural market shifts before they manifest as crises.
+            </p>
+        </header>
+
+        <div class="grid gap-12">
+            <section class="glass-card p-8 lg:p-12">
+                <h2 class="text-2xl font-bold mb-6 text-[#13ec92]">Why MarketShock AI?</h2>
+                <div class="grid lg:grid-cols-2 gap-8 text-slate-400 leading-relaxed">
+                    <p>
+                        In an era of rapid AI integration and global economic volatility, traditional forecasting tools
+                        often fail to capture the "black swan" events. We leverage high-frequency data from job
+                        listings,
+                        layoff reports, and AI automation trends to build a multi-dimensional risk profile.
+                    </p>
+                    <p>
+                        Our platform doesn't just look at stock prices; it looks at the foundational elements of the
+                        economy—talent, technology, and stability. By merging these datasets, we provide a
+                        "Shock_Risk_Score"
+                        that acts as an early warning system for industries at the brink of transformation.
+                    </p>
+                </div>
+            </section>
+
+            <section class="grid lg:grid-cols-3 gap-6">
+                <div class="glass-card p-6 border-emerald-500/20">
+                    <div class="w-12 h-12 bg-emerald-500/10 rounded-xl flex items-center justify-center mb-4">
+                        <svg class="w-6 h-6 text-[#13ec92]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-lg font-bold mb-2">Ethics First</h3>
+                    <p class="text-sm text-slate-400">Our AI is designed to minimize bias and maximize transparency in
+                        economic forecasting.</p>
+                </div>
+                <div class="glass-card p-6 border-blue-500/20">
+                    <div class="w-12 h-12 bg-blue-500/10 rounded-xl flex items-center justify-center mb-4">
+                        <svg class="w-6 h-6 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M13 10V3L4 14h7v7l9-11h-7z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-lg font-bold mb-2">Real-Time Data</h3>
+                    <p class="text-sm text-slate-400">We process thousands of data points daily to ensure our risk
+                        scores are always up-to-date.</p>
+                </div>
+                <div class="glass-card p-6 border-purple-500/20">
+                    <div class="w-12 h-12 bg-purple-500/10 rounded-xl flex items-center justify-center mb-4">
+                        <svg class="w-6 h-6 text-purple-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-lg font-bold mb-2">Human Centered</h3>
+                    <p class="text-sm text-slate-400">Beyond the numbers, our goal is to help people navigate the
+                        changing job landscape.</p>
+                </div>
+            </section>
+        </div>
+
+        <footer class="mt-24 pt-12 border-t border-slate-800 text-center text-slate-500 text-sm">
+            <p>&copy; 2026 MarketShock AI. Empowering structural change.</p>
+        </footer>
+    </main>
+
+    <!-- Background Animation Canvas -->
+    <canvas id="bg-canvas" class="fixed inset-0 -z-10 opacity-50"></canvas>
+    <script src="background-animation.js"></script>
+</body>
+
+</html>

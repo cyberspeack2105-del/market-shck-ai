@@ -1,0 +1,51 @@
+Job_Name,Description,Risk_Level,Shock_Risk_Score,Next_Week_Forecast,Risk_Distribution_Factors,Historical_Posting_Volume,Hiring_Trends_&_Future_Predictions_ARIMA,Future_Scope,How_To_Solve_Risk
+Software Developer,Develops software applications,Low,18,Increase,AI Growth High;Automation Low,12000,Upward Trend Predicted,Very High demand,Upgrade AI and cloud skills
+Data Analyst,Analyzes business data insights,Low,22,Increase,Data Demand Rising,9500,Upward Trend Predicted,High demand,Learn ML tools
+AI Engineer,Builds AI systems and models,Low,15,Increase,Innovation Investment High,8000,Strong Upward Forecast,Extremely High growth,Continuous AI research
+Web Developer,Designs websites and apps,Medium,45,Stable,Freelance Competition Moderate,11000,Stable Growth,Stable demand,Learn modern frameworks
+Cybersecurity Analyst,Protects systems from attacks,Low,20,Increase,Cyber Threats Rising,7000,Upward Trend,Very High demand,Gain ethical hacking certification
+Accountant,Manages financial accounts,Medium,55,Stable,Automation Moderate,8500,Stable Forecast,Stable demand,Learn financial analytics
+Bank Clerk,Handles banking transactions,High,82,Decrease,Digital Banking Automation High,6000,Downward Trend,Declining field,Upskill in fintech
+Teacher,Educates students,Low,25,Stable,EdTech Moderate,10000,Stable Forecast,Stable career,Adopt digital teaching
+Mechanical Engineer,Designs mechanical systems,Medium,50,Stable,Automation Moderate,7500,Stable Growth,Moderate growth,Learn robotics tech
+Civil Engineer,Plans infrastructure projects,Low,28,Increase,Infrastructure Growth High,9000,Upward Trend,Strong growth,Adopt smart construction
+Graphic Designer,Creates digital designs,Medium,48,Stable,AI Tools Rising,7200,Stable Forecast,Freelance growth,Learn UI UX
+Content Writer,Writes articles and blogs,Medium,60,Decrease,AI Content Tools High,10000,Downward Slight Trend,Competitive field,Specialize in niche writing
+Digital Marketer,Promotes brands online,Low,30,Increase,Ecommerce Growth High,9500,Upward Trend,High demand,Learn AI marketing
+HR Manager,Manages workforce,Medium,52,Stable,HR Automation Moderate,6800,Stable Forecast,Stable career,Use HR analytics
+Nurse,Provides patient care,Low,18,Increase,Healthcare Demand High,8500,Strong Upward Forecast,Very High demand,Continuous training
+Doctor,Treats patients medically,Low,10,Increase,Medical Necessity High,7800,Stable Upward Trend,Very Stable career,Specialize in medicine
+Driver,Operates vehicles,High,88,Decrease,Self Driving Tech High,15000,Downward Trend,Automation risk,Learn logistics management
+Factory Worker,Operates factory machines,High,85,Decrease,Industrial Automation High,13000,Downward Forecast,Declining role,Learn robotics handling
+Data Scientist,Builds predictive AI models,Low,12,Increase,AI Expansion Rapid,9200,Strong Upward Forecast,Extremely High growth,Continuous ML learning
+Cloud Engineer,Manages cloud systems,Low,20,Increase,Cloud Adoption High,8900,Upward Trend,High demand,Certify AWS Azure
+DevOps Engineer,Manages deployment pipelines,Low,24,Increase,Automation Demand High,7600,Upward Forecast,High growth,Learn CI CD tools
+UI UX Designer,Designs interfaces,Low,30,Stable,Digital Product Growth,7000,Stable Growth,Strong demand,Learn research tools
+Business Analyst,Analyzes business systems,Low,32,Stable,Data Driven Decisions Rising,6800,Stable Growth,Stable career,Learn BI tools
+Financial Analyst,Analyzes financial data,Medium,58,Stable,Market Volatility High,7200,Stable Forecast,Moderate growth,Use AI analytics
+Sales Executive,Sells products and services,Medium,65,Stable,Ecommerce Automation Rising,14000,Stable Slight Decline,Stable career,Learn digital sales
+Marketing Manager,Leads marketing strategies,Low,35,Increase,Digital Transformation High,7600,Upward Trend,High growth,Adopt AI campaigns
+Robotics Engineer,Designs robotic systems,Low,15,Increase,Automation Investment High,6000,Strong Upward Forecast,Very High demand,Advanced robotics research
+Customer Support Executive,Handles customer calls,High,78,Decrease,Chatbot Automation High,12500,Downward Forecast,Automation risk,Learn CRM tools
+Database Administrator,Maintains databases,Medium,45,Stable,Cloud Migration Moderate,6400,Stable Forecast,Stable demand,Learn cloud DB
+Network Engineer,Maintains networks,Low,28,Increase,5G Expansion High,5800,Upward Forecast,High demand,Gain certification
+System Administrator,Maintains IT systems,Medium,50,Stable,Cloud Shift Risk,6200,Stable Forecast,Stable demand,Learn cloud admin
+Mobile App Developer,Builds mobile apps,Low,22,Increase,App Market Growth High,8700,Upward Trend,High demand,Learn cross platform tools
+Game Developer,Develops video games,Medium,48,Stable,Market Competition Moderate,5400,Stable Forecast,Stable growth,Learn AR VR
+Video Editor,Edits videos,Medium,55,Stable,AI Editing Tools Rising,9800,Stable Slight Growth,Freelance growth,Learn AI editing
+Journalist,Reports news stories,Medium,62,Decrease,Digital Shift High,7600,Downward Forecast,Competitive media field,Learn multimedia journalism
+Lawyer,Provides legal services,Low,20,Stable,Legal Demand Stable,5200,Stable Growth,Stable career,Specialize cyber law
+Police Officer,Maintains public safety,Low,15,Stable,Government Stability High,4800,Stable Forecast,Stable career,Advanced training
+Architect,Designs buildings,Low,28,Increase,Smart City Growth High,5000,Upward Trend,Strong demand,Learn green building tech
+Interior Designer,Designs interiors,Medium,46,Stable,Market Fluctuation Moderate,6100,Stable Growth,Stable demand,Learn 3D design
+Event Manager,Organizes events,Medium,58,Stable,Market Dependency High,5300,Stable Forecast,Moderate growth,Use digital tools
+Hotel Manager,Manages hotels,Medium,55,Stable,Tourism Dependent,6200,Stable Slight Growth,Moderate growth,Adopt booking systems
+Chef,Prepares professional food,Low,25,Stable,Hospitality Stable,7000,Stable Growth,Stable demand,Learn modern cuisine
+Agricultural Officer,Supports farming sector,Low,20,Increase,AgriTech Growth High,4300,Upward Trend,High growth,Adopt smart farming
+Farmer,Grows crops and livestock,Medium,50,Stable,Climate Risk Moderate,20000,Stable Forecast,Moderate growth,Use irrigation tech
+Pilot,Operates aircraft,Low,18,Increase,Aviation Recovery High,4100,Upward Trend,Stable career,Continuous training
+Logistics Manager,Manages supply chain,Low,28,Increase,Ecommerce Growth High,7200,Upward Trend,High demand,Learn AI supply chain
+Social Media Manager,Handles social platforms,Low,30,Increase,Digital Growth High,8400,Upward Trend,High demand,Use AI analytics
+SEO Specialist,Optimizes search rankings,Low,35,Stable,Search Automation Moderate,7900,Stable Growth,Stable demand,Learn AI SEO
+Ethical Hacker,Tests cybersecurity systems,Low,12,Increase,Cybersecurity Investment High,4600,Strong Upward Forecast,Very High demand,Advanced cybersecurity training
+Renewable Energy Engineer,Works on green energy systems,Low,15,Increase,Sustainability Focus High,3900,Strong Upward Forecast,Extremely High future demand,Specialize in green technology
