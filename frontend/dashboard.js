@@ -152,7 +152,9 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     function renderTrendsChart(historical, forecast) {
-        const ctx = document.getElementById('trendsChart').getContext('2d');
+        const canvas = document.getElementById('trendsChart');
+        if (!canvas) return;
+        const ctx = canvas.getContext('2d');
         if (trendsChart) trendsChart.destroy();
 
         const labels = [...historical.map((_, i) => `W${i + 1}`), ...forecast.map((_, i) => `F${i + 1}`)];
@@ -185,7 +187,9 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     function renderVolumeChart(historical) {
-        const ctx = document.getElementById('volumeChart').getContext('2d');
+        const canvas = document.getElementById('volumeChart');
+        if (!canvas) return;
+        const ctx = canvas.getContext('2d');
         if (volumeChart) volumeChart.destroy();
 
         volumeChart = new Chart(ctx, {
@@ -212,7 +216,9 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     function renderRiskRadarChart(radarData) {
-        const ctx = document.getElementById('riskRadarChart').getContext('2d');
+        const canvas = document.getElementById('riskRadarChart');
+        if (!canvas) return;
+        const ctx = canvas.getContext('2d');
         if (riskRadarChart) riskRadarChart.destroy();
 
         riskRadarChart = new Chart(ctx, {
