@@ -1,5 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const industrySelect = document.getElementById('industry-select');
+    const industryInput = document.getElementById('industry-input');
+    const industryList = document.getElementById('industry-list');
     const refreshBtn = document.getElementById('refresh-btn');
     const riskValue = document.getElementById('risk-value');
     const riskLabel = document.getElementById('risk-label');
@@ -17,12 +18,13 @@ document.addEventListener('DOMContentLoaded', () => {
             const res = await fetch(`${API_BASE_URL}/industries`);
             const industries = await res.json();
 
-            industrySelect.innerHTML = industries.map(ind =>
-                `<option value="${ind}">${ind}</option>`
+            industryList.innerHTML = industries.map(ind =>
+                `<option value="${ind}">`
             ).join('');
 
-            // Initial load
-            if (industries.length > 0) {
+            // Set default value if empty
+            if (industries.length > 0 && !industryInput.value) {
+                industryInput.value = industries[0];
                 updateDashboard();
             }
         } catch (err) {
@@ -31,7 +33,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     async function updateDashboard() {
-        const industry = industrySelect.value;
+        const industry = industryInput.value.trim();
         if (!industry) return;
 
         try {
@@ -245,7 +247,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function exportToPDF() {
         const element = document.getElementById('analysis-report');
-        const industryName = industrySelect.value || 'Analysis';
+        const industryName = industryInput.value || 'Analysis';
 
         // Configuration for html2pdf
         const opt = {
@@ -271,6 +273,9 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     refreshBtn.addEventListener('click', updateDashboard);
+    industryInput.addEventListener('keypress', (e) => {
+        if (e.key === 'Enter') updateDashboard();
+    });
     exportBtn.addEventListener('click', exportToPDF);
     loadIndustries();
 });

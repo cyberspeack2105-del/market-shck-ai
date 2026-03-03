@@ -6,6 +6,10 @@ from data_processor import DataProcessor
 from forecaster import Forecaster
 import os
 from typing import List, Optional
+from dotenv import load_dotenv
+
+# Load environment variables from .env file
+load_dotenv(dotenv_path=os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', '.env'))
 
 app = FastAPI(title="MarketShock AI API")
 
@@ -100,8 +104,11 @@ async def chat(request: ChatRequest):
     """
     Proxy endpoint for OpenRouter AI Assistant.
     """
-    API_KEY = "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"
-    MODEL = "openai/gpt-oss-120b"
+    API_KEY = os.getenv("OPENROUTER_API_KEY")
+    MODEL = os.getenv("OPENROUTER_MODEL", "openai/gpt-oss-120b")
+    
+    if not API_KEY:
+        raise HTTPException(status_code=500, detail="OpenRouter API key not configured. Please set OPENROUTER_API_KEY in .env file.")
     
     try:
         async with httpx.AsyncClient() as client:
