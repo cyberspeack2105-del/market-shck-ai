@@ -57,49 +57,13 @@
             -webkit-text-fill-color: transparent;
         }
 
-        @keyframes float {
-            0% {
-                transform: translateY(0px);
-            }
-
-            50% {
-                transform: translateY(-20px);
-            }
-
-            100% {
-                transform: translateY(0px);
-            }
-        }
-
-        @keyframes rotate-glow {
-            from {
-                transform: rotate(0deg);
-            }
-
-            to {
-                transform: rotate(360deg);
-            }
-        }
-
         .hero-image-container {
             position: relative;
-            padding: 8px;
+            padding: 12px;
             background: rgba(255, 255, 255, 0.05);
             backdrop-filter: blur(10px);
             border-radius: 2rem;
-            animation: float 6s ease-in-out infinite;
-        }
-
-        .hero-image-container::before {
-            content: "";
-            position: absolute;
-            inset: -4px;
-            background: conic-gradient(from 0deg, #13ec92, #0ea5e9, #13ec92);
-            border-radius: 2.2rem;
-            animation: rotate-glow 4s linear infinite;
-            z-index: -1;
-            opacity: 0.6;
-            filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
         }
 
         .hero-image-inner {
@@ -123,13 +87,13 @@
             <h2 class="text-white text-lg font-bold leading-tight tracking-tight">MarketShock AI</h2>
         </div>
         <div class="flex items-center gap-6">
-            <a href="home.html"
+            <a href="index.html"
                 class="hidden sm:block text-xs font-black uppercase tracking-widest text-[#13ec92]">Home</a>
             <a href="about.html"
                 class="hidden sm:block text-xs font-black uppercase tracking-widest text-slate-500 hover:text-primary transition-colors">About</a>
             <a href="model-details.html"
                 class="hidden sm:block text-xs font-black uppercase tracking-widest text-slate-500 hover:text-primary transition-colors">Model</a>
-            <a href="index.html"
+            <a href="dashboard.html"
                 class="hidden sm:block text-xs font-black uppercase tracking-widest text-slate-500 hover:text-primary transition-colors">Dashboard</a>
         </div>
     </header>
@@ -161,7 +125,7 @@
                         </p>
                     </div>
                     <div class="flex flex-col gap-3 sm:flex-row lg:justify-start justify-center">
-                        <a href="index.html"
+                        <a href="dashboard.html"
                             class="flex items-center justify-center rounded-2xl px-8 h-16 bg-primary text-slate-900 text-lg font-black shadow-xl shadow-primary/30 hover:scale-[1.05] transition-all uppercase tracking-tight">
                             Start Analyzing Now
                         </a>
@@ -249,7 +213,7 @@
                     Protect your wealth with the <span class="text-gradient">next generation</span> of trading tech
                 </h2>
                 <div class="flex flex-col sm:flex-row w-full max-w-md gap-4 relative z-10">
-                    <a href="index.html"
+                    <a href="dashboard.html"
                         class="flex-1 bg-primary text-slate-900 h-16 rounded-2xl font-black text-lg flex items-center justify-center hover:brightness-110 shadow-lg shadow-primary/20 uppercase tracking-tight">
                         Access Dashboard
                     </a>
@@ -266,14 +230,14 @@
     <!-- Footer / Nav Bar -->
     <footer class="bg-[#0f172a] border-t border-white/5 mt-20">
         <div class="max-w-xl mx-auto flex gap-2 bg-transparent px-4 pb-8 pt-4">
-            <a class="flex flex-1 flex-col items-center justify-center gap-1.5 text-primary group" href="home.html">
+            <a class="flex flex-1 flex-col items-center justify-center gap-1.5 text-primary group" href="index.html">
                 <div class="flex h-10 w-10 items-center justify-center bg-primary/10 rounded-xl">
                     <span class="material-symbols-outlined font-bold">home</span>
                 </div>
                 <p class="text-[10px] font-black uppercase tracking-[0.2em]">Home</p>
             </a>
             <a class="flex flex-1 flex-col items-center justify-center gap-1.5 text-slate-500 hover:text-primary transition-all group"
-                href="index.html">
+                href="dashboard.html">
                 <div class="flex h-10 w-10 items-center justify-center group-hover:bg-primary/5 rounded-xl">
                     <span class="material-symbols-outlined font-bold">trending_up</span>
                 </div>
